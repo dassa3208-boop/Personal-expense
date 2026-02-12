@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Expense Tracker</title>
+ <link rel="icon" href="E:\New folder\logo">
+
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    font-family: Arial;
+    height:130vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+}
+.login-box{
+    background:white;
+    padding:40px;
+    width:350px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.3);
+}
+.login-box h1{
+    text-align:center;
+    color:#764ba2;
+}
+.input-group{
+    margin-bottom:15px;
+}
+.input-group input{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:2px solid #ddd;
+}
+button{
+    padding:10px;
+    border:none;
+    border-radius:20px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:8px;
+}
+.submit-btn{
+    width:100%;
+    background: linear-gradient(45deg,#ff512f,#dd2476);
+    color:white;
+}
+.reset-btn{
+    width:100%;
+    background:#999;
+    color:white;
+}
+.next-btn{
+    width:100%;
+    background: linear-gradient(45deg,#00c6ff,#0072ff);
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<div class="login-box">
+<h1>Login Page</h1>
+
+<form action="save.php" method="POST">
+
+<div class="input-group"><h4>username:</h4>
+<input type="text" name="username" placeholder="Enter username" required>
+</div>
+
+<div class="input-group"><h4>Password:</h4>
+<input type="password" name="password" placeholder="Enter password" required>
+</div>
+
+<div class="input-group"><h4>Email:</h4>
+<input type="email" name="email" placeholder="Enter email" required>
+</div>
+
+<div class="input-group"><h4>Age:</h4>
+<input type="number" name="age" placeholder="Enter age">
+</div>
+
+<div>
+<input type="radio" name="gender" value="Male"> Male
+<input type="radio" name="gender" value="Female"> Female
+</div>
+
+<button type="submit" class="submit-btn">Submit</button>
+
+
+</form>
+
+<a href="E:\prom\Personal Expernse 3.html">
+<button class="next-btn">Next Page</button>
+</a>
+
+</div>
+
+
+</body>
+</html>
